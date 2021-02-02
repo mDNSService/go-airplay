@@ -29,6 +29,10 @@ func init() {
 }
 
 func main() {
-	client, _ := airplay.NewClient()
+	client, _ := airplay.NewClient(&airplay.ClientParam{
+		Addr:     "",
+		Port:     0,
+		Password: "",
+	})
 	client.Scrub(opts.position)
 }
