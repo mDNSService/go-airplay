@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/gongo/go-airplay"
+	"github.com/mdnsService/go-airplay"
 )
 
 var opts struct {
